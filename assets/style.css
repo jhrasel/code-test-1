@@ -1,0 +1,154 @@
+/* font-family: 'Montserrat', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: tomato;
+  margin-bottom: 20px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+/* add_task */
+
+.add_task {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+
+input {
+  width: 60%;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.add__task__btn {
+  background: blueviolet;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* filtering */
+
+.filtering {
+  margin-top: 30px;
+}
+
+.filtering label {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #444;
+}
+
+.filtering select {
+  padding: 7px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 10px;
+  color: #666;
+}
+
+button {
+  margin-left: 10px;
+}
+
+/* taskList */
+
+.taskList {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.taskList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444;
+}
+
+.taskList li span {
+  min-width: 20%;
+  word-break: break-all;
+}
+
+li.completed {
+  text-decoration: line-through;
+}
+
+.taskList input {
+  width: 20px;
+  height: 20px;
+}
+
+.remove__btn {
+  background: red;
+  padding: 5px 25px;
+  font-size: 14px;
+  border-radius: 6px;
+  width: 20%;
+}
